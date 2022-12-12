@@ -1,0 +1,43 @@
+template engine
+to make the dynamic pages
+npm packages
+dynamic pages: comes from database 
+static: content sticked to the website
+ejs: 
+used more in template engine 
+npm install ejs
+
+nodejs : dynamic pages less
+we made more api's in nodejs
+but also we will learn about 
+
+// we need to tell the nodejs that we are using the ejs 
+app.set( 'viewengine','ejs' )
+//we need to create views folder that is the compulsory thing
+
+app.get('/profile',(_,resp)=>{
+    resp.render(profile)
+})
+now we need to render the ejs thing
+
+    <!-- <%= include('common/header.ejs'); %> -->
+= shows the html engine / html code not the content 
+as the =  refers to showing the content the file actually contains or the object contains 
+to show the content with the html code specified in the page 
+we need to do - which is hyphen
+    <!-- <%- include('common/header.ejs'); %> -->
+
+the purpose of this is to add the html inside the ejs file 
+in simple language: header.ejs contains the html code 
+and login.ejs and the profile.ejs contains the html code 
+but the <%= is where the dynamic data is communicated btn the servers
+but in this case the ejs ma external html connection ko lagi 
+what we should do vanera thahavayo 
+header.ejs ma k xa ??
+<nav>
+    <h3>header file</h3>
+</nav>
+
+aba yesma kei pani xaina <html> closing kei pani but still 
+.ejs jun chai main ma run garnu parne ho tesma xa 
+yesle html ko same code lai reusable banayo 

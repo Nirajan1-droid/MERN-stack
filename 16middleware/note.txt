@@ -1,0 +1,88 @@
+middle ware
+req, res are modifiable
+authentication check 
+wheather the user is logged in or not
+
+we need to change the req and resp
+we can change that in routes but why still middle 
+
+because middleware can be made once and used 
+but the route needs more code and we cannot reuse install
+
+
+const reqFilter = (req, res,next)=>{
+    //if next function is not executed here then it will not go forward
+    //req and resp is same but requires next function to move futher into another function
+
+    console.log('reqFilter')
+    next();
+}
+app.use(reqFilter)
+
+
+for data placement
+right now we are not using the placeholder to place the data 
+we are using the query method for placing the data in the direct url place
+with this :
+http://localhost:5000/users?age=19
+
+and for the age thing we are checking the age by the if elseif and else condition
+const reqFilter = (req, res,next)=>{
+    //if next function is not executed here then it will not go forward
+    //req and resp is same but requires next function to move futher into another function
+    if(!req.query.age)
+    {
+        res.send('Please provide age')
+    }
+    else if(req.query.age <18){
+        res.send('you cannot access this page')
+    }
+    else{
+
+        next();
+    }
+}
+
+middleware types:
+
+application -level
+router level
+if we are doing the middleware for the 50 routes then we do it in routerlevel
+error handeling middleware
+builtin middleware
+third party middleware
+
+//another file bata acess garda hamile 
+const lai hataera 
+module.exports= functionname = (req,res,next )=>{
+
+}
+
+
+module.exports= reqFilter = (req, res,next)=>{
+    //if next function is not executed here then it will not go forward
+    //req and resp is same but requires next function to move futher into another function
+    if(!req.query.age)
+    {
+        res.send('Please provide age')
+    }
+    else if(req.query.age <18){
+        res.send('you cannot access this page')
+    }
+    else{
+
+        next();
+    }
+}
+
+
+
+for large scale website large middleware
+
+const reqFilter = require('./middleware.js')
+const route = express.Router()
+route.use(reqFilter)
+route.get()//strike in middleware
+app.get()//direct next()
+
+app.use('/', route) //yo sab vanda tala vayena vane app.get pani route.get jasari kaam garxa , but this is for the large scale website 

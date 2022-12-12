@@ -1,0 +1,17 @@
+mongodb compass
+env variable
+mongodb and mysql differences
+how does mongodb works in background
+theory and practical
+basic commands
+it is not a nosql database
+the data stored in a collection as a form of object
+not row and columns
+
+notsql meaning: oracle, mysql - they are sql - which have structure 
+strucutre have limits 
+
+CRUD operation in mongodb
+mongodb and mongodbcompass
+
+

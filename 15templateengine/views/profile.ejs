@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>profile page</title>
+</head>
+<body>
+    <%- include('common/header.ejs'); %>
+
+    //for react: we use {}
+    //for angular : we use double curly {{}}
+    <h1>welcome<%=" "+user.name%></h1>
+    <h1>your age is <%=" "+user.age%></h1>
+    your coding skills are: 
+    <ul>
+        <%user.skills.forEach((item)=>
+        {%>
+            <li><%= item %></li>
+            <li><%= item%></li>
+            <li><%= item %></li>
+            
+        <%})
+        %>
+  
+    </ul>
+</body>
+</html>
+

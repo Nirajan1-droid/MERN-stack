@@ -5,3 +5,10 @@
 
  so we won't be using the use(express.static(pathName));
  
+
+
+ apply get method 
+ remove an extension from URL
+ make 404 page
+ apply 404 page
+ 
