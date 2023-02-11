@@ -15,7 +15,7 @@ To get started with this repository, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
 
-git clone https://github.com/Nirajan1-droid/MERN-stack.git
+git clone https://github.com/Nirajan1-droid/MERN-stack
 
 
 2. Install the dependencies by running the following command in the root directory of the project:
@@ -39,3 +39,8 @@ The following lessons are covered in this repository:
 ## Conclusion
 
 This repository provides a comprehensive introduction to the MERN stack development process. By following the lessons and examples in this repository, you should be able to start building your own web applications using the MERN stack.
+
+
+Additional:
+provided notes for each section in .txt file, do remember to check that out.
+
